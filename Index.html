@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Albert Einstein</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+   
+</head>
+
+<body>
+
+    <!-- for implementing grid  -->
+    <div class="container_grid_body">
+
+        <!-- Header for website -->
+        <header class="header header_grid">
+            <a href="#" class="logo">
+                <img src="Images/emc2_logo.jpg" alt="">
+            </a>
+            <a href="#" class="header_h1">
+                <h1>Albert Einstein</h1>
+            </a>
+            <nav>
+                <ul class="nav-links show__navLinks" id="ham">
+                    <li class="nav-item"><a href="#about">About</a></li>
+                    <li class="nav-item"><a href="#papers">Papers</a></li>
+                    <li class="nav-item"><a href="#experience">Experience</a></li>
+                    <li class="nav-item"><a href="#hobbies">Hobbies</a></li>
+                    <li class="nav-item"><a href="#blogs">Blogs</a></li>
+                </ul>
+                <div class="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- header code ends -->
+
+        <script>
+            const hamburger = document.querySelector(".hamburger");
+            const navLinks = document.querySelector(".nav-links");
+
+            hamburger.addEventListener("click", () => {
+                // Toggle Nav
+                navLinks.classList.toggle("show__navLinks");
+
+                // Hamburger Animation
+                hamburger.classList.toggle("toggle");
+            });
+        </script>
+        <!-- About Div Block starts-->
+
+        <div class="sections_body about_section about_grid" id="about">
+            <h1 class="section__header about_h1_grid">About me</h1>
+
+            <div class="about__description about_des_grid">
+                <p>Albert Einstein was a German-born physicist who is widely regarded as one of the most influential
+                    scientists of the 20th century. He is best known for his theory of relativity, which revolutionized
+                    our understanding of space, time, and gravity.
+
+                    Einstein was born on March 14, 1879, in Ulm, Germany, and grew up in Munich. He studied physics and
+                    mathematics at the Swiss Federal Institute of Technology (ETH) in Zurich and later worked as a
+                    patent clerk in Bern, Switzerland.
+
+                    In 1905, Einstein published four groundbreaking papers that laid the foundation for modern physics.
+                    These papers introduced the theory of special relativity, which explains how time and space are
+                    relative to the observer's perspective, and the famous equation E=mc², which shows the equivalence
+                    of mass and energy.
+
+                    Later, Einstein developed the theory of general relativity, which explains the force of gravity as a
+                    curvature in spacetime caused by the presence of massive objects. His work also contributed to the
+                    development of quantum mechanics, which explains the behavior of particles on the atomic and
+                    subatomic scale.
+
+                    In addition to his contributions to physics, Einstein was a pacifist and a social activist, speaking
+                    out against nuclear weapons and working towards world peace. He emigrated to the United States in
+                    1933 to escape Nazi persecution and became a US citizen in 1940. Einstein died on April 18, 1955, at
+                    the age of 76.
+                    <br><br>
+                    Albert Einstein remains a towering figure in the world of science, and his theories continue to
+                    inspire new research and breakthroughs to this day.
+                    <br><br>
+                    <b>"Learn from yesterday, live for today, hope for tomorrow. The important thing is not to stop
+                        questioning"</b>
+
+                </p>
+                <img class="about__profilePhoto about_profile_grid" src="Images/tounge1.jpg" alt="">
+            </div>
+
+
+        </div>
+        <!-- About Div Block ends-->
+
+        <!--Papers Div block starts-->
+        <div class="sections_body blogs_grid" id="papers">
+            <h1 class="section__header">Papers Published</h1>
+
+            <!--my code for blogs starts-->
+            <div class="blogs_container">
+                <div class="blog_box">
+                    <h2>Title:Book #1--Reports of the 1st Solvay Conference of Physics
+                        
+                        Published:true 
+                        Year:1912
+                    </h2>
+                    <a href="https://en.wikipedia.org/wiki/Specific_heat_capacity" class="read_more" target="_blank">Read
+                        More</a>
+            </div>
+            <div class="blog_box">
+                <h2>Title:Book #2-- Physics
+                    Published:true 
+                    Year:1915
+                </h2>
+                <a href="https://en.wikipedia.org/wiki/Atomic_physics" class="read_more" target="_blank">Read
+                    More</a>
+        </div>
+        <div class="blog_box">
+            <h2>Title:Book #3-- Foundations of Einstein's Gravitational Theory
+                Published:true 
+                Year:1916
+            </h2>
+            <a href="https://en.wikipedia.org/wiki/General_relativity" class="read_more" target="_blank">Read
+                More</a>
+         </div>
+         <div class="blog_box">
+            <h2>Title:Book #4-- Relativity Theory, Treated Mathematically
+
+                Published:true
+                Year:1925
+            </h2>
+            <a href="https://en.wikipedia.org/wiki/Classical_unified_field_theories" class="read_more" target="_blank">Read
+                More</a>
+         </div>
+         <div class="blog_box">
+            <h2>Title:Book #5-- The Meaning of Relativity, 4th edition
+                Published:true
+                Year:1953
+            </h2>
+            <a href="https://en.wikipedia.org/wiki/The_Meaning_of_Relativity" class="read_more" target="_blank">Read
+                More</a>
+         </div>
+
+        
+
+            <!--my code for blogs ends-->
+        </div>
+
+
+        <!--Papers Div block ends-->
+
+        <!--Experience Div block starts-->
+        <div class="sections_body experience_grid" id="experience">
+            <h1 class="section__header">Experience</h1>
+            <div class="experience_description">
+                <h2>University of Bern - PHD</h2>
+                <p>
+                    <br>
+                    Graduated with a PHD. Wrote dissertation on the determination of molecular dimensions.
+                </p>
+
+                <h2><br>University of Zurich - PHD</h2>
+                <p>
+                    <br>
+                    Graduated with a Degree in Mathematics and Natural Sciences. From 1909, he was an Extraordinary
+                    Professor at the University of Zurich and from 1912 to 1914 he worked as a Professor of Theoretical
+                    Physics at ETH Zürich.
+                </p>
+
+                <h2><br> Swiss Federal Polytechnic - Bachelor's degree</h2>
+                <p>
+                    <br>
+                    1896 - 1900, attended ETH Zurich for a BA in physics.
+                </p>
+
+                <h2><br> Luitpold Gymnasium - Schooling</h2>
+                <p>
+                    <br>
+                    Studied various subjects at Luitpold Gymnasium, which was a secondary school in Munich, Germany. The
+                    subjects he studied included mathematics, physics, Latin, Greek, and history.
+                </p>
+            </div>
+        </div>
+        <!--Experience Div block ends-->
+
+        <!-- HObbies Div block starts -->
+
+        <div class="sections_body hobbies_grid" id="hobbies">
+            <h1 class="section__header">Hobbies & Interests</h1>
+            <div class="hobbies_description">
+                <p>I have a variety of hobbies and interests outside of his work as a physicist. Some of his favorite
+                    pastimes included:</p>
+
+                <h3><br>Playing the Violin</h3>
+                <p>Einstein was an accomplished violinist and began playing at a young age. He continued to play
+                    throughout his life and was known to enjoy performing classical music in his spare time.</p>
+
+                <h3><br>Traveling</h3>
+                <p>Einstein was an avid traveler and visited many countries throughout his lifetime. He was particularly
+                        fascinated by Asia and the Middle East, and often incorporated his travels into his work as a
+                        physicist.</p>
+
+                <h3><br>Sailing</h3>
+                <p>Einstein loved to sail and owned a boat named Tümmler. He would often spend weekends on the water,
+                    enjoying the peacefulness and beauty of nature.</p>
+
+                <h3><br>Reading</h3>
+                <p>Einstein was an avid reader and had a personal library of over 2,000 books. He was interested in a
+                    wide range of subjects, from science and philosophy to literature and history.</p>
+
+                <h3><br>Writing</h3>
+                <p>Einstein enjoyed writing about his scientific theories and philosophical ideas. He also wrote letters
+                    to friends and colleagues, some of which have been published in collections.</p>
+
+            </div>
+        </div>
+
+
+
+        <!-- HObbies Div block ends -->
+
+
+        <!--Blogs Div block starts-->
+        <div class="sections_body blogs_grid" id="blogs">
+            <h1 class="section__header">Blogs</h1>
+
+            <!--my code for blogs starts-->
+            <div class="blogs_container">
+        
+                <div class="blog_box">
+                    <h2>Photoelectric Effect</h2>
+                    <p>Discover how Einstein's work on the photoelectric effect helped lay the foundations for quantum
+                        mechanics.</p>
+                    <a href="https://en.wikipedia.org/wiki/Photoelectric_effect" class="read_more" target="_blank">Read
+                        More</a>
+                </div>
+                <div class="blog_box">
+                    <h2>Special Relativity Theory</h2>
+                    <p>Learn more about Einstein's theory of special relativity and its implications for our
+                        understanding of space and time.</p>
+                    <a href="https://en.wikipedia.org/wiki/Special_relativity" class="read_more" target="_blank">Read
+                        More</a>
+                </div>
+                <div class="blog_box">
+                    <h2>General Relativity Theory</h2>
+                    <p>Explore Einstein's theory of general relativity, which describes the force of gravity and the
+                        curvature of spacetime.</p>
+                    <a href="https://en.wikipedia.org/wiki/General_relativity" class="read_more" target="_blank">Read
+                        More</a>
+                </div>
+            </div>
+            <!--my code for blogs ends-->
+        </div>
+        <!--my code for  blogs-->
+
+
+
+        <!-- footer starts here -->
+        <footer class="footer footer_grid">
+            <div class="footer_links">
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="copyright">
+                <p>© 2023 Albert Einstein Portfolio. All rights reserved.</p>
+            </div>
+        </footer>
+        <!-- footer ends here -->
+
+    </div>
+</body>
+
+
+
+</html>
