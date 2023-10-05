@@ -1,0 +1,407 @@
+/* CSS Style steet */
+/* css properties for full page */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  }
+  
+  /* css properties for body */
+  body {
+    margin: 0;
+    background-color: #ececec;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+  
+  .section__header {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    margin: 2rem 0;
+    text-align: center;
+  }
+  
+  
+  
+  /* Header style properties */
+  .header {
+    justify-content: space-between;
+    background-color: black;
+    padding: 0.3rem 0;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .header,
+  .logo {
+    align-items: center;
+    color: #fff;
+    height: 75px;
+  }
+  
+  .header a {
+    float: left;
+    text-align: center;
+  }
+  
+  .header_h1 {
+    margin-top: 10px;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+    margin-top: 20px;
+  }
+  
+  .nav-links li {
+    margin-right: 10px;
+    display: inline;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  
+  @media screen and (max-width: 650px) {
+    .header_h1 {
+      display: none;
+    }
+  
+  }
+  
+  @media screen and (max-width: 1030px) {
+    .hamburger {
+      display: flex;
+      float: right;
+      flex-direction: column;
+      justify-content: space-around;
+      margin-right: 2rem;
+      margin: 2rem;
+      cursor: pointer;
+    }
+  
+    .hamburger .bar {
+      height: 0.2rem;
+      width: 2rem;
+      border-radius: 0.5rem;
+      background-color: #fff;
+      margin: 0.18rem 0;
+      pointer-events: none;
+    }
+  
+    .show__navLinks {
+      display: flex !important;
+      -webkit-animation: navFade .6s ease;
+      animation: navFade .6s ease;
+      position: absolute;
+      top: 3.5rem;
+      right: 0;
+      height: 50vh;
+      padding: 0 1.5rem;
+      /* display: flex; */
+      flex-direction: column;
+      justify-content: space-evenly;
+      background-color: #000;
+      z-index: 100;
+      transition: all 1s ease !important;
+    }
+  
+    .nav-links {
+      display: none;
+    }
+  
+  }
+  
+  /* Header style properties */
+  
+  /* Common CSS for blocks */
+  
+  .sections_body {
+    padding-top: 70px;
+    background-color: #ececec;
+    /* min-height: 100vh; */
+    min-height: 100%;
+    padding: 2rem 0;
+  
+  }
+  
+  /* CSS for about block */
+  
+  .about_section {
+    background-color: #ececec !important;
+  
+  }
+  
+  #about {
+    min-height: 100vh;
+    padding: 2rem 0;
+    text-align: center;
+  }
+  
+  #about h1 {
+    padding-top: 50px;
+  }
+  
+  .logo {
+    margin: 0 2rem;
+    font-size: medium;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Peddana;
+    background: transparent;
+    justify-content: center;
+    white-space: nowrap;
+    font-size: clamp(.8rem, 10%, 1rem);
+    margin-top: 10px;
+  
+  }
+  
+  .logo>img {
+    height: 3rem;
+    margin-right: 1rem;
+    border-radius: 50px;
+  }
+  
+  
+  .about_des_grid {
+    grid-area: about_des;
+  }
+  
+  .about_profile_grid {
+    grid-area: about_pro;
+  }
+  
+  .about__description {
+  
+    margin-left: 50px;
+    margin-right: 50px;
+    font-family: "Heebo", sans-serif;
+    /* display: flex; */
+  
+    display: grid !important;
+  
+    height: 100%;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "about_des about_pro"
+  
+    ;
+    grid-gap: 0.5rem;
+  
+  }
+  
+  .about__description img {
+    padding-left: 50px;
+  }
+  
+  .about__description p {
+    margin-right: 50px;
+  }
+  
+  .about__profilePhoto {
+    height: 400px;
+    width: 400px;
+  
+  }
+  
+  /* grid implementation for about description and picture */
+  
+  @media screen and (max-width: 850px) {
+  
+  
+    .about__description {
+      /* text-align: center; */
+      /* margin: 1rem 3rem; */
+      margin-left: 5px;
+      margin-right: 5px;
+      font-family: "Heebo", sans-serif;
+      /* display: flex; */
+  
+      display: grid !important;
+  
+      height: 100%;
+      grid-template-columns: auto;
+      grid-template-rows: auto;
+      grid-template-areas:
+        "about_des"
+        "about_pro"
+  
+      ;
+      grid-gap: 0.5rem;
+  
+    }
+  
+    .about__description {
+  
+      display: grid;
+    }
+  
+    .about__profilePhoto {
+      height: 100%;
+      width: 100%;
+  
+    }
+  
+    .about__description img {
+      padding-left: 0px;
+    }
+  
+    .about__description p {
+      margin-right: 0px;
+    }
+  
+  }
+  
+  /* css for papers */
+  
+  /* css for papers */
+  
+  /* Experience CSS properties */
+  .experience_description {
+    margin-left: 50px;
+    margin-right: 50px;
+    font-family: "Heebo", sans-serif;
+  
+  }
+  
+  /* Experience css properties ends */
+  
+  /* hobbies css starts here */
+  .hobbies_description {
+    margin-left: 50px;
+    margin-right: 50px;
+    font-family: "Heebo", sans-serif;
+  
+  }
+  
+  /* hobbies css ends here */
+  
+  /* blog code css */
+  .blogs_container {
+    display: inline-block;
+    justify-content: space-between;
+    padding: 100px;
+    text-align: center;
+  }
+  
+  #blogs {
+    padding-top: 80px;
+    padding-bottom: 0px !important;
+  }
+  
+  .blog_box {
+    width: 30%;
+    display: inline-block;
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    border-radius: 6px;
+  }
+  
+  .blog_box h2 {
+    margin-bottom: 20px;
+  }
+  
+  .read_more {
+    display: block;
+    margin-top: 20px;
+  }
+  
+  /* blog code css ends*/
+  
+  /*footer css properties*/
+  
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    background-color: black;
+    color: white;
+  }
+  
+  
+  .footer_links {
+    margin-right: 2rem;
+  }
+  
+  .footer_links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer_links li {
+    display: inline-block;
+    margin-right: 1rem;
+  }
+  
+  .footer_links a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer_links a:hover {
+    text-decoration: underline;
+  }
+  
+  /* copyright */
+  .copyright {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+  }
+  
+  
+  /* mobile implementation css properties */
+  
+  /*Mobile layout*/
+  
+  @media screen and (max-width: 500px) {
+  
+  
+    /* changing about description css so that it will auto adgust when screen size reduces */
+    .about__description {
+      display: flex;
+      margin: 1rem 3rem;
+      font-family: "Heebo", sans-serif;
+  
+    }
+  
+    /* Media queries - Responsive timeline on screens less than 500px wide */
+  
+    /* blogs css properties for 500px screen*/
+    .blogs_container {
+      padding: 0px;
+    }
+  
+    .blog_box {
+      width: auto;
+      display: block;
+      background-color: #fff;
+      padding: 20px;
+      text-align: center;
+      margin-bottom: 20px;
+      border-radius: 6px;
+  
+    }
+  
+  }
